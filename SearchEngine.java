@@ -20,7 +20,7 @@ class Handler implements URLHandler {
         String[] parameters = url.getQuery().split("=");
         if (parameters[0].equals("s")) {
           items.add(parameters[1]);
-          return String.format("Item %s add!", parameters[1]);
+          return String.format("Item %s added!", parameters[1]);
         }
       }
 
@@ -30,7 +30,7 @@ class Handler implements URLHandler {
           String result = "";
           for (String string : items) {
             if (string.contains(parameters[1])) {
-              result += string;
+              result += "" + string;
             }
           }
           return result;
