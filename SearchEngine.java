@@ -41,7 +41,7 @@ class Handler implements URLHandler {
   }
 }
 
-class NumberServer {
+class SearchEngine {
 
   public static void main(String[] args) throws IOException {
     if (args.length == 0) {
