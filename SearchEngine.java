@@ -30,7 +30,7 @@ class Handler implements URLHandler {
           String result = "";
           for (String string : items) {
             if (string.contains(parameters[1])) {
-              result += "" + string;
+              result += " " + string;
             }
           }
           return result;
